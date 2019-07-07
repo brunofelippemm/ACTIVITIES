@@ -1,0 +1,5 @@
+1. For the analyzed drugs, Capomulin presented the best overall behavior against this type of cancer in this mice population;
+
+2. The other two drugs presented behavior very close to the group under Placebo (fake treatment) indicating that it doesn't affect much in the cancer evolution;
+
+3. None of the analyzed drugs were able to decrease or stop the increase of metastatic sites, although Capomulin presented the minimum increase rate.
