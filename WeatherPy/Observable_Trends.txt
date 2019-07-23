@@ -1,0 +1,5 @@
+1. As the absolute value of the latitude increases, the humidity also increases;
+
+2. The closer to the latitude +20, higher is the current season Max Temperature (This offset from latitude 0 is due to inclination of Earth rotational axis and current summer in the north hemisphere);
+
+3. As expected, windspeed distribution is concentrated on low values and are more sparse for higher values. 
