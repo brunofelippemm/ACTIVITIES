@@ -1,9 +1,4 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/Ht7uPS
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
-
-CREATE TABLE "departments" (
+﻿CREATE TABLE "departments" (
     "dept_no" VARCHAR(4)   NOT NULL,
     "dept_name" VARCHAR   NOT NULL,
     CONSTRAINT "pk_departments" PRIMARY KEY (
