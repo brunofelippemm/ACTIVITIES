@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <title>latitude data</title>
+</head>
+<body class= "container-fluid">
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	  <a class="navbar-brand" href="index.html">Latitude</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarColor01">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	      </li>
+	      <li class="nav-item dropdown">
+		    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+		    <div class="dropdown-menu">
+                <a class="dropdown-item" href="lat_maxtemp.html">Max temperature</a>
+                <a class="dropdown-item" href="lat_humid.html">Humidity</a>
+                <a class="dropdown-item" href="lat_cloud.html">Cloudiness</a>
+                <a class="dropdown-item" href="lat_windspeed.html">Wind speed</a>
+		    </div>
+		  </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="comparisons.html">Comparison</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="data.html">Data</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<div class="jumbotron">
+            <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card border-primary mb-3" style="max-width: 80rem;">
+                            <div class="card-header"><h1>Humidity</h1></div>
+                            <div class="card-body">
+                                <img class="card-img-bottom" src="images/lat_humid.png"></img>
+                                <p class="card-text">Humidity is regulary distributed through the latitude, but it is possible to see that closer it get to the poles it is less likely to
+                                    to have low humidity, that makes sense because extreme absolute values for latitute are place with water abundance. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-secondary mb-3" style="max-width: 80rem;">
+                            <div class="card-header"><h2>Visualizations</h2></div>
+                            <div class="card-body">
+                                <a href="lat_maxtemp.html"><img class="card-img-top" src="images/lat_maxtemp.png" href="lat_maxtemp.html"></img></a>
+                                <a href="lat_humid.html"><img class="card-img-top" src="images/lat_humid.png" href="lat_humid.html"></img></a>
+                                <a href="lat_cloud.html"><img class="card-img-top" src="images/lat_cloud.png" href="lat_cloud.html"></img></a>		    	
+                                <a href="lat_windspeed.html"><img class="card-img-top" src="images/lat_windspeed.png" href="lat_windspeed.html"></img></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+	</div>
+
+	<footer class= "card-footer">
+		<p>&copy; Copyright Coding Bootcamp 2017</p>
+	</footer>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
