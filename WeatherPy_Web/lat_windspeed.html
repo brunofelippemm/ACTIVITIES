@@ -11,6 +11,7 @@
 
     <title>latitude data</title>
 </head>
+
 <body class= "container-fluid">
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -42,43 +43,43 @@
 	  </div>
 	</nav>
 	<div class="jumbotron">
-            <div class="row">
-                    <div class="col-lg-8">
-                        <div class="card border-primary mb-3" style="max-width: 80rem;">
-                            <div class="card-header"><h1>Humidity</h1></div>
-                            <div class="card-body">
-                                <img class="card-img-bottom" src="images/lat_humid.png"></img>
-                                <p class="card-text">Humidity is regulary distributed through the latitude, but it is possible to see that closer it get to the poles 
-                                                     it is less likely to have low humidity, that makes sense because extreme absolute values for latitude are places 
-                                                     with water abundance. From this same plot is evident that the dataset is biased because does not have a even 
-                                                     distribution of latitudes. So many the observed trends many change or even disappear as the dataset is subsampled.</p>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card border-primary mb-3" style="max-width: 80rem;">
+                    <div class="card-header"><h1>Wind Speed</h1></div>
+                    <div class="card-body">
+                        <img class="card-img-bottom" src="images/lat_windspeed.png"></img>
+                        <p class="card-text">Wind speed appear to increase as the absolute value of latitude increases. This pattern maybe due to the 
+                                            <a class="link" href="https://en.wikipedia.org/wiki/Coriolis_force">Coriolis Effect</a> and for the higher gradient
+                                            of temperature as it gets futher from the equator. The last factor is based on the fact that temperature gradient is the primary cause
+                                            for wind generation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border-secondary mb-3" style="max-width: 80rem;">
+                    <div class="card-header"><h2>Visualizations</h2></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                    <a href="lat_maxtemp.html"><img class="card-img-top" src="images/lat_maxtemp.png" href="lat_maxtemp.html"></img></a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="lat_humid.html"><img class="card-img-top" src="images/lat_humid.png" href="lat_humid.html"></img></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card border-secondary mb-3" style="max-width: 80rem;">
-                            <div class="card-header"><h2>Visualizations</h2></div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <a href="lat_maxtemp.html"><img class="card-img-top" src="images/lat_maxtemp.png" href="lat_maxtemp.html"></img></a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                      <a href="lat_humid.html"><img class="card-img-top" src="images/lat_humid.png" href="lat_humid.html"></img></a>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-lg-6">
-                                      <a href="lat_cloud.html"><img class="card-img-top" src="images/lat_cloud.png" href="lat_cloud.html"></img></a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                      <a href="lat_windspeed.html"><img class="card-img-top" src="images/lat_windspeed.png" href="lat_windspeed.html"></img></a>
-                                    </div>	    	
-                                  </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="lat_cloud.html"><img class="card-img-top" src="images/lat_cloud.png" href="lat_cloud.html"></img></a>
                             </div>
+                            <div class="col-lg-6">
+                                <a href="lat_windspeed.html"><img class="card-img-top" src="images/lat_windspeed.png" href="lat_windspeed.html"></img></a>
+                            </div>	    	
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 	</div>
 
 	<footer class= "card-footer">

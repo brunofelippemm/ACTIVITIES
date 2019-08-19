@@ -9,8 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap.css">
 
-	<title>latitude data</title>
+    <title>latitude data</title>
 </head>
+
 <body class= "container-fluid">
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -42,28 +43,42 @@
 	  </div>
 	</nav>
 	<div class="jumbotron">
-		<div class="card border-primary mb-3" style="max-width: 80rem;">
-			<div class="card-header"><h1>Comparison: Latitude vs X</h1></div>
-		  	<div class="card-body">
-				<h4 class="card-title">Click any plot for an in depth analisis</h4>
-				<div class="row">
-					<div class="col-lg-6">
-							<a href="lat_maxtemp.html"><img class="card-img-top" src="images/lat_maxtemp.png" href="lat_maxtemp.html"></img></a>
-					</div>
-					<div class="col-lg-6">
-						<a href="lat_humid.html"><img class="card-img-top" src="images/lat_humid.png" href="lat_humid.html"></img></a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-6">
-						<a href="lat_cloud.html"><img class="card-img-top" src="images/lat_cloud.png" href="lat_cloud.html"></img></a>
-					</div>
-					<div class="col-lg-6">
-						<a href="lat_windspeed.html"><img class="card-img-top" src="images/lat_windspeed.png" href="lat_windspeed.html"></img></a>
-					</div>	    	
-				</div>
-		 	</div>
-		 </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card border-primary mb-3" style="max-width: 80rem;">
+                    <div class="card-header"><h1>Max Temperature</h1></div>
+                    <div class="card-body">
+                        <img class="card-img-bottom" src="images/lat_maxtemp.png"></img>
+                        <p class="card-text">From the plot one can infer that closer to the equator, higher the max temperature, and as the distance from it increases
+                                            the temperature behavior follows a parabolic fall pattern. This trend is intuitive as the light from the sun focus more 
+                                            perpendicularly near the equator than the regions far from it.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border-secondary mb-3" style="max-width: 80rem;">
+                    <div class="card-header"><h2>Visualizations</h2></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="lat_maxtemp.html"><img class="card-img-top" src="images/lat_maxtemp.png" href="lat_maxtemp.html"></img></a>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="lat_humid.html"><img class="card-img-top" src="images/lat_humid.png" href="lat_humid.html"></img></a>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <a href="lat_cloud.html"><img class="card-img-top" src="images/lat_cloud.png" href="lat_cloud.html"></img></a>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="lat_windspeed.html"><img class="card-img-top" src="images/lat_windspeed.png" href="lat_windspeed.html"></img></a>
+                            </div>	    	
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</div>
 
 	<footer class= "card-footer">
