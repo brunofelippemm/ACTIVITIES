@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}" />
+
+	<title>Mars News</title>
+</head>
+<body>
+
+	<div class="jumbotron centering">
+		<div class="text-center">
+            <h1 class="display-3">Mission to Mars</h1>
+        </div>
+        <div class="text-center">
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{{ url_for('scrapeMars')}}" role="button">Scrape new data</a>
+        </p>
+        </div>
+	</div>
+</body>
+</html>

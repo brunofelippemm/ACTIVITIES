@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}" />
+
+	<title>Mars News</title>
+</head>
+<body>
+
+	<div class="jumbotron centering">
+		<div class="text-center">
+            <h1 class="display-3">Mission to Mars</h1>
+        </div>
+        <div class="text-center">
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{{ url_for('scrapeMars')}}" role="button">Scrape new data</a>
+        </p>
+        </div>
+	</div>
+    <div class="container">
+        <h2>{{ data.newsTitle }}</h2>
+        <p>{{ data.newsDescription}}</p>
+        <hr/>
+    </div>
+    <div class="container">
+        <h2>Featured Mars Image</h2>
+        <div class="row">
+            <div class="col-8">
+
+                <img class="img-fluid" src="{{data.featuredImageUrl}}" />
+            </div>
+            <div class="col">
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Current Weather on Mars</div>
+                    <div class="card-body">
+                        <p class="card-text">{{data.marsWeather}}</p>
+                    </div>
+                </div>
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Mars facts</div>
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Value</th>
+                                </tr>
+
+                                {% for k,v in data.marsFacts.Value.items() %}
+                                <tr>
+                                    <th scope="row">{{k}}</th>
+                                    <td>{{v}}</td>
+                                </tr>
+                                {% endfor %}    
+                          </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+    </div>
+    <div class="container">
+        <div class="text-center">
+            <h2>Mars Hemispheres</h2>
+        </div>
+        <div class="w-100"></div>
+        <div class="row">
+
+        {% for d in data.imageList %}
+            <div class="col-6">
+                <img class="figure-img" src="{{ d.img_url }}" />
+                <h3 class="figure-caption">{{ d.title }}</h3>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
