@@ -25,3 +25,6 @@ def scrapeMars():
 	scrape_mars.storeInDb(marsData)
 	data = scrape_mars.getData()
 	return render_template('scrapeMars.html', data=data)
+
+if __name__ == "__main__":
+    app.run(debug=False)
